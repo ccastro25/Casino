@@ -23,14 +23,14 @@ public class UserInputScanner {
 
         while (true) {
             display.displayMessage(promt);
-      try {
-          return scanner.nextDouble();
-      } catch (InputMismatchException e) {
-          display.displayMessage("Error , wrong output, try again");
-          scanner.next();
+            try {
+                return scanner.nextDouble();
+            } catch (InputMismatchException e) {
+                display.displayMessage("Error , wrong output, try again");
+                scanner.next();
 
-      }
-  }
+            }
+        }
 
     }
 
@@ -39,10 +39,10 @@ public class UserInputScanner {
 
         while (true) {
             display.displayMessage(prompt);
-           try{ return scanner.nextInt();}
+            try{ return scanner.nextInt();}
 
-           catch (InputMismatchException e){display.displayMessage("Error , wrong output, try again");
-               scanner.next();}
+            catch (InputMismatchException e){display.displayMessage("Error , wrong output, try again");
+                scanner.next();}
 
         }
     }

@@ -29,7 +29,7 @@ public class Player {
       wallet += addAmount;
     }
 
-    public void subtractMonyeFromWallet(double subtractAmount){
+    public void subtractMoneyFromWallet(double subtractAmount){
 
         wallet -= subtractAmount;
     }
